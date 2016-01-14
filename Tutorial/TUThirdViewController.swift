@@ -17,6 +17,15 @@ class TUThirdViewController: UIViewController {
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        self.title = "Third"
+        self.view.backgroundColor = UIColor.whiteColor()
+        
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 120, height: 50))
+        label.center = self.view.center
+        label.textColor = UIColor.redColor()
+        label.font = UIFont.systemFontOfSize(40)
+        label.text = "Finish"
+        self.view.addSubview(label)
     }
     
     override func viewDidLoad() {
