@@ -20,8 +20,21 @@ class TUFirstViewController: UIViewController {
         
         self.title = "First"
         self.view.backgroundColor = UIColor.whiteColor()
+        
+        let button = UIButton(frame: CGRect(x: 300, y: 70, width: 100, height: 40))
+        button.setTitle("Tab Bar", forState: UIControlState.Normal)
+        button.backgroundColor = UIColor.blackColor()
+        button.addTarget(self, action: "buttonClicked:", forControlEvents: UIControlEvents.TouchUpInside)
+        self.view.addSubview(button)
+        
     }
-    
+
+    func buttonClicked(sender:UIButton) {
+        NSLog("Button Clicked!")
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.window!.rootViewController = appDelegate.tabBarController
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
