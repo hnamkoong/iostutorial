@@ -35,8 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // init navigation controller
         navigationController = UINavigationController(rootViewController: TUFirstViewController())
-        
-        
+
         return true
     }
 
