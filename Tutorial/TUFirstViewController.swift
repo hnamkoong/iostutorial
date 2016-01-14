@@ -27,12 +27,23 @@ class TUFirstViewController: UIViewController {
         button.addTarget(self, action: "buttonClicked:", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(button)
         
+        let nextButton = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 40))
+        nextButton.center = self.view.center
+        nextButton.setTitle("Next", forState: UIControlState.Normal)
+        nextButton.backgroundColor = UIColor.blueColor()
+        nextButton.addTarget(self, action: "nextButtonClicked:", forControlEvents: UIControlEvents.TouchUpInside)
+        self.view.addSubview(nextButton)
+
     }
 
     func buttonClicked(sender:UIButton) {
         NSLog("Button Clicked!")
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         appDelegate.window!.rootViewController = appDelegate.tabBarController
+    }
+    
+    func nextButtonClicked(sender:UIButton) {
+        self.navigationController?.pushViewController(TUSecondViewController(), animated: true)
     }
 
     override func viewDidLoad() {

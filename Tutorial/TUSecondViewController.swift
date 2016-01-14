@@ -17,6 +17,8 @@ class TUSecondViewController: UIViewController {
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        self.title = "Second"
+        self.view.backgroundColor = UIColor.brownColor()
     }
     
     override func viewDidLoad() {
