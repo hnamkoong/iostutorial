@@ -12,6 +12,10 @@
 		F19F93801C477F4E005AF508 /* TUGoldspoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19F937F1C477F4E005AF508 /* TUGoldspoonViewController.swift */; };
 		F19F93821C477F62005AF508 /* TUTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19F93811C477F62005AF508 /* TUTransitionViewController.swift */; };
 		F19F93841C47806A005AF508 /* goldspoon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F19F93831C47806A005AF508 /* goldspoon.jpg */; };
+		F19F93861C47891C005AF508 /* TUFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19F93851C47891C005AF508 /* TUFirstViewController.swift */; };
+		F19F93881C47892C005AF508 /* TUSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19F93871C47892C005AF508 /* TUSecondViewController.swift */; };
+		F19F938A1C478939005AF508 /* TUThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19F93891C478939005AF508 /* TUThirdViewController.swift */; };
+		F19F938C1C478945005AF508 /* TUFourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19F938B1C478945005AF508 /* TUFourthViewController.swift */; };
 		F1C3D3631C4688D7007B13EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C3D3621C4688D7007B13EB /* AppDelegate.swift */; };
 		F1C3D3651C4688D7007B13EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C3D3641C4688D7007B13EB /* ViewController.swift */; };
 		F1C3D3681C4688D7007B13EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C3D3661C4688D7007B13EB /* Main.storyboard */; };
@@ -32,6 +36,10 @@
 		F19F937F1C477F4E005AF508 /* TUGoldspoonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TUGoldspoonViewController.swift; sourceTree = "<group>"; };
 		F19F93811C477F62005AF508 /* TUTransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TUTransitionViewController.swift; sourceTree = "<group>"; };
 		F19F93831C47806A005AF508 /* goldspoon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = goldspoon.jpg; sourceTree = "<group>"; };
+		F19F93851C47891C005AF508 /* TUFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TUFirstViewController.swift; sourceTree = "<group>"; };
+		F19F93871C47892C005AF508 /* TUSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TUSecondViewController.swift; sourceTree = "<group>"; };
+		F19F93891C478939005AF508 /* TUThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TUThirdViewController.swift; sourceTree = "<group>"; };
+		F19F938B1C478945005AF508 /* TUFourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TUFourthViewController.swift; sourceTree = "<group>"; };
 		F1C3D35F1C4688D7007B13EB /* Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C3D3621C4688D7007B13EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1C3D3641C4688D7007B13EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +95,10 @@
 				F1C3D36E1C4688D7007B13EB /* Info.plist */,
 				F19F937F1C477F4E005AF508 /* TUGoldspoonViewController.swift */,
 				F19F93811C477F62005AF508 /* TUTransitionViewController.swift */,
+				F19F93851C47891C005AF508 /* TUFirstViewController.swift */,
+				F19F93871C47892C005AF508 /* TUSecondViewController.swift */,
+				F19F93891C478939005AF508 /* TUThirdViewController.swift */,
+				F19F938B1C478945005AF508 /* TUFourthViewController.swift */,
 			);
 			path = Tutorial;
 			sourceTree = "<group>";
@@ -190,9 +202,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F19F93821C477F62005AF508 /* TUTransitionViewController.swift in Sources */,
+				F19F938A1C478939005AF508 /* TUThirdViewController.swift in Sources */,
+				F19F93881C47892C005AF508 /* TUSecondViewController.swift in Sources */,
 				F19F93801C477F4E005AF508 /* TUGoldspoonViewController.swift in Sources */,
+				F19F93861C47891C005AF508 /* TUFirstViewController.swift in Sources */,
 				F1C3D3651C4688D7007B13EB /* ViewController.swift in Sources */,
 				F1C3D3631C4688D7007B13EB /* AppDelegate.swift in Sources */,
+				F19F938C1C478945005AF508 /* TUFourthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

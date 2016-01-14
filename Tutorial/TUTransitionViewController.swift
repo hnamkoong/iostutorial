@@ -22,7 +22,7 @@ class TUTransitionViewController: UIViewController {
         
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 40))
         button.center = self.view.center
-        button.setTitle("Transition", forState: UIControlState.Normal)
+        button.setTitle("Nav Con", forState: UIControlState.Normal)
         button.backgroundColor = UIColor.blackColor()
         button.addTarget(self, action: "buttonClicked:", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(button)
@@ -30,8 +30,10 @@ class TUTransitionViewController: UIViewController {
     
     func buttonClicked(sender:UIButton) {
         NSLog("Button Clicked!")
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.window!.rootViewController = appDelegate.navigationController
     }
-   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

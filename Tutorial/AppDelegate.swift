@@ -14,9 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     var tabBarController: UITabBarController?
+    var navigationController: UINavigationController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
+        // init tab bar controller
         self.tabBarController = UITabBarController()
 
         let viewController1 = TUGoldspoonViewController()
@@ -30,7 +32,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.tabBarController!.viewControllers = [viewController1, viewController2]
 
         self.window!.rootViewController = tabBarController
-
+        
+        // init navigation controller
+        navigationController = UINavigationController(rootViewController: TUFirstViewController())
+        
+        
         return true
     }
 
