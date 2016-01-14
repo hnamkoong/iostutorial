@@ -12,10 +12,25 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    var tabBarController: UITabBarController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        self.tabBarController = UITabBarController()
+
+        let viewController1 = TUGoldspoonViewController()
+        viewController1.title = "Gold Spoon"
+        viewController1.tabBarItem.image = UIImage(named: "btn_franklychat.png")
+        
+        let viewController2 = TUTransitionViewController()
+        viewController2.title = "Transition"
+        viewController2.tabBarItem.image = UIImage(named: "btn_friend_on")
+        
+        self.tabBarController!.viewControllers = [viewController1, viewController2]
+
+        self.window!.rootViewController = tabBarController
+
         return true
     }
 

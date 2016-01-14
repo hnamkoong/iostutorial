@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F19F937D1C477E82005AF508 /* btn_franklychat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F19F937B1C477E82005AF508 /* btn_franklychat@2x.png */; };
+		F19F937E1C477E82005AF508 /* btn_friend_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F19F937C1C477E82005AF508 /* btn_friend_on@2x.png */; };
+		F19F93801C477F4E005AF508 /* TUGoldspoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19F937F1C477F4E005AF508 /* TUGoldspoonViewController.swift */; };
+		F19F93821C477F62005AF508 /* TUTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19F93811C477F62005AF508 /* TUTransitionViewController.swift */; };
+		F19F93841C47806A005AF508 /* goldspoon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F19F93831C47806A005AF508 /* goldspoon.jpg */; };
 		F1C3D3631C4688D7007B13EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C3D3621C4688D7007B13EB /* AppDelegate.swift */; };
 		F1C3D3651C4688D7007B13EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C3D3641C4688D7007B13EB /* ViewController.swift */; };
 		F1C3D3681C4688D7007B13EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C3D3661C4688D7007B13EB /* Main.storyboard */; };
@@ -22,6 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F19F937B1C477E82005AF508 /* btn_franklychat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_franklychat@2x.png"; sourceTree = "<group>"; };
+		F19F937C1C477E82005AF508 /* btn_friend_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_friend_on@2x.png"; sourceTree = "<group>"; };
+		F19F937F1C477F4E005AF508 /* TUGoldspoonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TUGoldspoonViewController.swift; sourceTree = "<group>"; };
+		F19F93811C477F62005AF508 /* TUTransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TUTransitionViewController.swift; sourceTree = "<group>"; };
+		F19F93831C47806A005AF508 /* goldspoon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = goldspoon.jpg; sourceTree = "<group>"; };
 		F1C3D35F1C4688D7007B13EB /* Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C3D3621C4688D7007B13EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1C3D3641C4688D7007B13EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +85,8 @@
 				F1C3D3691C4688D7007B13EB /* Assets.xcassets */,
 				F1C3D36B1C4688D7007B13EB /* LaunchScreen.storyboard */,
 				F1C3D36E1C4688D7007B13EB /* Info.plist */,
+				F19F937F1C477F4E005AF508 /* TUGoldspoonViewController.swift */,
+				F19F93811C477F62005AF508 /* TUTransitionViewController.swift */,
 			);
 			path = Tutorial;
 			sourceTree = "<group>";
@@ -89,6 +101,9 @@
 				F1C3D37A1C468A31007B13EB /* Icon-60@2x.png */,
 				F1C3D37B1C468A31007B13EB /* Icon-40@2x.png */,
 				F1C3D37C1C468A31007B13EB /* Icon-60@3x.png */,
+				F19F937B1C477E82005AF508 /* btn_franklychat@2x.png */,
+				F19F937C1C477E82005AF508 /* btn_friend_on@2x.png */,
+				F19F93831C47806A005AF508 /* goldspoon.jpg */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -151,6 +166,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F19F937E1C477E82005AF508 /* btn_friend_on@2x.png in Resources */,
+				F19F937D1C477E82005AF508 /* btn_franklychat@2x.png in Resources */,
 				F1C3D37E1C468A31007B13EB /* Icon-Small@3x.png in Resources */,
 				F1C3D36D1C4688D7007B13EB /* LaunchScreen.storyboard in Resources */,
 				F1C3D3761C4689D8007B13EB /* screen.jpg in Resources */,
@@ -161,6 +178,7 @@
 				F1C3D37F1C468A31007B13EB /* Icon-40@3x.png in Resources */,
 				F1C3D3681C4688D7007B13EB /* Main.storyboard in Resources */,
 				F1C3D3801C468A31007B13EB /* Icon-60@2x.png in Resources */,
+				F19F93841C47806A005AF508 /* goldspoon.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +189,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F19F93821C477F62005AF508 /* TUTransitionViewController.swift in Sources */,
+				F19F93801C477F4E005AF508 /* TUGoldspoonViewController.swift in Sources */,
 				F1C3D3651C4688D7007B13EB /* ViewController.swift in Sources */,
 				F1C3D3631C4688D7007B13EB /* AppDelegate.swift in Sources */,
 			);
@@ -320,6 +340,7 @@
 				F1C3D3731C4688D7007B13EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
