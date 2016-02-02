@@ -33,6 +33,7 @@
 		F1C3D3821C468A31007B13EB /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F1C3D37C1C468A31007B13EB /* Icon-60@3x.png */; };
 		F1C8AEAD1C60961B00B5FCD3 /* TUStudentAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C8AEAC1C60961B00B5FCD3 /* TUStudentAViewController.swift */; };
 		F1C8AEAF1C60971100B5FCD3 /* TUStudentGeneral.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C8AEAE1C60971100B5FCD3 /* TUStudentGeneral.swift */; };
+		F1C8AEB11C60A2AA00B5FCD3 /* TUNetworkExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C8AEB01C60A2AA00B5FCD3 /* TUNetworkExampleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		F1C3D37C1C468A31007B13EB /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
 		F1C8AEAC1C60961B00B5FCD3 /* TUStudentAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TUStudentAViewController.swift; sourceTree = "<group>"; };
 		F1C8AEAE1C60971100B5FCD3 /* TUStudentGeneral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TUStudentGeneral.swift; sourceTree = "<group>"; };
+		F1C8AEB01C60A2AA00B5FCD3 /* TUNetworkExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TUNetworkExampleViewController.swift; sourceTree = "<group>"; };
 		F42EF8AC052EB66CA63AAAD7 /* Pods-Tutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tutorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tutorial/Pods-Tutorial.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +130,7 @@
 				F1C3D36E1C4688D7007B13EB /* Info.plist */,
 				F1C8AEAC1C60961B00B5FCD3 /* TUStudentAViewController.swift */,
 				F1C8AEAE1C60971100B5FCD3 /* TUStudentGeneral.swift */,
+				F1C8AEB01C60A2AA00B5FCD3 /* TUNetworkExampleViewController.swift */,
 			);
 			path = Tutorial;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1C8AEB11C60A2AA00B5FCD3 /* TUNetworkExampleViewController.swift in Sources */,
 				F19F93821C477F62005AF508 /* TUTransitionViewController.swift in Sources */,
 				F1C8AEAD1C60961B00B5FCD3 /* TUStudentAViewController.swift in Sources */,
 				F19F938A1C478939005AF508 /* TUThirdViewController.swift in Sources */,

@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        self.window!.rootViewController = TUStudentAViewController()
+        self.window!.rootViewController = TUNetworkExampleViewController()
         return true
         
         // init tab bar controller
