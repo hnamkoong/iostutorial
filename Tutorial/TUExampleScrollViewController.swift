@@ -29,6 +29,33 @@ class TUExampleScrollViewController: UIViewController, UIScrollViewDelegate {
 //        self.scrollView.frame = CGRect(x: 0, y: 20, width: self.view.frame.size.width * 2, height: (self.view.frame.size.height-20) * 2)
         self.scrollView.delegate = self
         self.view.addSubview(self.scrollView)
+        
+        // serial
+        let serialQueue = dispatch_queue_create("HunThread1", DISPATCH_QUEUE_SERIAL)
+        
+        // concurrent
+        let concurrentQueue = dispatch_queue_create("HunThread2", DISPATCH_QUEUE_CONCURRENT)
+        
+        // concurrent
+        let mainQueue = dispatch_get_main_queue()
+        
+        dispatch_sync(concurrentQueue) { () -> Void in
+            for index in 1...30 {
+                print("1 - \(index)")
+            }
+        }
+        
+        dispatch_sync(concurrentQueue) { () -> Void in
+            for index in 1...30 {
+                print("2 - \(index)")
+            }
+        }
+
+        dispatch_sync(concurrentQueue) { () -> Void in
+            for index in 1...30 {
+                print("3 - \(index)")
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {
