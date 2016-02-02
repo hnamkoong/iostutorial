@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import AFNetworking
 
 class TUNetworkExampleViewController: UIViewController {
     
@@ -24,6 +25,11 @@ class TUNetworkExampleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
+        let data = NSData(contentsOfURL: NSURL(string: "http://groov.fm/images/beta.png")!)
+        let image = UIImage(data: data!)
+        let imageView = UIImageView(image: image)
+        imageView.center = self.view.center
+        self.view.addSubview(imageView)
     }
     
     override func didReceiveMemoryWarning() {
