@@ -43,9 +43,13 @@ class TUStudentAViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel!.text = String(indexPath.row)
-        return cell
+        var cell = tableView.dequeueReusableCellWithIdentifier("HunCell")
+        if cell == nil {
+            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "HunCell")
+        }
+        
+        cell!.textLabel!.text = String(indexPath.row)
+        return cell!
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
