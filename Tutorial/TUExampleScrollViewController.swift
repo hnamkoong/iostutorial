@@ -25,6 +25,7 @@ class TUExampleScrollViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
         self.scrollView.frame = CGRect(x: 0, y: 20, width: self.view.frame.size.width, height: (self.view.frame.size.height-20))
+        self.scrollView.addSubview(UIImageView(image: UIImage(named: "screen.jpg")))
         self.scrollView.contentSize = CGSize(width: self.view.frame.size.width * 2, height: (self.view.frame.size.height-20) * 2)
 //        self.scrollView.frame = CGRect(x: 0, y: 20, width: self.view.frame.size.width * 2, height: (self.view.frame.size.height-20) * 2)
         self.scrollView.delegate = self
