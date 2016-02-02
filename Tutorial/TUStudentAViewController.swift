@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class TUStudentAViewController: UIViewController {
+class TUStudentAViewController: UIViewController, StudentInformationProtocol {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -28,4 +28,13 @@ class TUStudentAViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+
+    func communicateStudentName() -> String {
+        return "Hun Namkung"
+    }
+    
+    func communicateStudentID() -> String {
+        return "20081256"
+    }
+    
 }

@@ -8,6 +8,11 @@
 
 import Foundation
 
+protocol StudentInformationProtocol {
+    func communicateStudentName() -> String
+    func communicateStudentID() -> String
+}
+
 class TUStudentGeneral: NSObject {
     let location = "Daejeon"
     let schoolName = "KAIST"
