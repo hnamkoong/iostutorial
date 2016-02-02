@@ -47,5 +47,17 @@ class TUStudentAViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.textLabel!.text = String(indexPath.row)
         return cell
     }
-
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        switch indexPath.row % 3 {
+        case 0 :
+            return 30
+        case 1 :
+            return 60
+        case 2 :
+            return 90
+        default :
+            return 120
+        }
+    }
 }
