@@ -18,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
+        self.window!.rootViewController = TUStudentAViewController()
+        return true
+        
         // init tab bar controller
         self.tabBarController = UITabBarController()
 
