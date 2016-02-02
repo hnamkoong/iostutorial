@@ -17,11 +17,12 @@ class TUStudentAViewController: UIViewController {
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let sg = TUStudentGeneral()
+        sg.printInformation()
     }
     
     override func didReceiveMemoryWarning() {

@@ -18,4 +18,11 @@ class TUStudentGeneral: NSObject {
     override init() {
         
     }
+    
+    func printInformation() {
+        print("location : \(self.location)")
+        print("schoolName : \(self.schoolName)")
+        print("studentName : \(self.studentName)")
+        print("studentID : \(self.studentID)")
+    }
 }
