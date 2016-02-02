@@ -22,6 +22,7 @@ class TUStudentAViewController: UIViewController, StudentInformationProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         let sg = TUStudentGeneral()
+        sg.delegate = self
         sg.printInformation()
     }
     

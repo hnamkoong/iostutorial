@@ -20,6 +20,9 @@ class TUStudentGeneral: NSObject {
     var studentName: String?
     var studentID: String?
     
+    var delegate:StudentInformationProtocol?
+    
+    
     override init() {
         
     }
@@ -27,7 +30,11 @@ class TUStudentGeneral: NSObject {
     func printInformation() {
         print("location : \(self.location)")
         print("schoolName : \(self.schoolName)")
-        print("studentName : \(self.studentName)")
-        print("studentID : \(self.studentID)")
+
+        self.studentName = delegate?.communicateStudentName()
+        print("studentName : \(self.studentName!)")
+        
+        self.studentID = delegate?.communicateStudentID()
+        print("studentID : \(self.studentID!)")
     }
 }
