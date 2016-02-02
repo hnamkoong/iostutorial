@@ -9,7 +9,9 @@
 import Foundation
 import UIKit
 
-class TUStudentAViewController: UIViewController, StudentInformationProtocol {
+class TUStudentAViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    let tableView = UITableView()
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -21,21 +23,29 @@ class TUStudentAViewController: UIViewController, StudentInformationProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let sg = TUStudentGeneral()
-        sg.delegate = self
-        sg.printInformation()
+//        let sg = TUStudentGeneral()
+//        sg.delegate = self
+//        sg.printInformation()
+        self.view.backgroundColor = UIColor.whiteColor()
+        tableView.frame = CGRect(x: 0, y: 20, width: self.view.frame.size.width, height: self.view.frame.size.height - 20)
+        tableView.delegate = self
+        tableView.dataSource = self
+        self.view.addSubview(tableView)
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
-    func communicateStudentName() -> String {
-        return "Hun Namkung"
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 20
     }
     
-    func communicateStudentID() -> String {
-        return "20081256"
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        cell.textLabel!.text = String(indexPath.row)
+        return cell
     }
-    
+
 }
