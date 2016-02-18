@@ -13,6 +13,7 @@ class TUExampleScrollViewController: UIViewController, UIScrollViewDelegate {
     
     let scrollView = UIScrollView()
     
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -40,23 +41,25 @@ class TUExampleScrollViewController: UIViewController, UIScrollViewDelegate {
         // concurrent
         let mainQueue = dispatch_get_main_queue()
         
-        dispatch_sync(concurrentQueue) { () -> Void in
+        dispatch_async(concurrentQueue) { () -> Void in
             for index in 1...30 {
                 print("1 - \(index)")
             }
         }
         
-        dispatch_sync(concurrentQueue) { () -> Void in
+        dispatch_async(concurrentQueue) { () -> Void in
             for index in 1...30 {
                 print("2 - \(index)")
             }
         }
 
-        dispatch_sync(concurrentQueue) { () -> Void in
+        dispatch_async(concurrentQueue) { () -> Void in
             for index in 1...30 {
                 print("3 - \(index)")
             }
         }
+        
+        print("main thread")
     }
     
     override func didReceiveMemoryWarning() {
